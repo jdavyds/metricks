@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+    background-color: rgb(23, 1, 53);
+}
+.header img {
+    height: 80px;
+}
+.header a {
+    margin: 0 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+.header button  {
+    padding: 15px 25px;
+    margin: 0 30px;
+    font-size: 18px;
+    background: rgb(54,81,193);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}

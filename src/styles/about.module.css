@@ -1,0 +1,218 @@
+.all {
+    background: rgb(23, 1, 53);
+    background-size: cover;
+}
+.intro {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 0 35%;
+    color: white;
+    background-image: url(./../assets/bg2.png);
+    background-position:
+    top 80px right 20px;
+    background-size: 130px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(41, 19, 70); 
+    opacity: 0.7;
+    background-size: cover;
+}
+.intro img {
+    position: absolute;
+    top: 90px;
+    left: 30%;
+    width: 300px;
+    height: 400px;
+    -webkit-filter: blur(20px); 
+    filter: blur(20px);
+    opacity: 0.4;   
+}
+.intro h6 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    z-index: 444;
+}
+.intro h6 b {
+    margin: 10px;
+}
+.intro h1 {
+    font-size: 55px;
+    font-weight: 500;
+    margin: 30px 0 0 100px;
+    line-height: 1.4;
+    text-align: left;
+    z-index: 444;
+}
+.intro p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 100px 100px 0 auto;
+    line-height: 1.8;
+    width: 400px;
+    text-align: left;
+}
+.purpose {
+    color: white;
+    font-size: 55px;
+    padding: 120px 0 0;
+    text-align: left;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+}
+.pitch {
+    min-height: 400px;
+    padding: 100px 0 200px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.why, .grow {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 120px;
+    color: white;
+    position: relative;
+}
+.why h6, .grow h6 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    z-index: 333;
+}
+.why span, .grow span {
+    border-bottom: 3px solid white;
+    padding: 10px;
+    margin: -10px 10px 0 0;
+}
+.why p, .grow p {
+    font-size: 18px;
+    margin: 30px 0;
+    line-height: 1.6;
+    z-index: 333;
+}
+.why {
+    background-image: url(./../assets/dots.png);
+    background-position:
+    bottom 30px left 120px;
+    background-size: 250px 120px;
+    background-repeat: no-repeat;
+}
+.grow img {
+    position: absolute;
+    top: 60px;
+    left: 180px;
+    width: 200px;
+    height: 250px;
+    -webkit-filter: blur(20px); 
+    filter: blur(20px);
+    opacity: 0.4;   
+}
+.grow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(41, 19, 70); 
+    opacity: 0.7;
+    background-size: cover;
+}
+.question {
+    min-height: 100px;
+    padding: 30px 120px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    z-index: 0;
+}
+.question::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(41, 19, 70);
+    opacity: 0.7;
+}
+.question img {
+    position: absolute;
+    top: 50px;
+    right: 220px;
+    width: 250px;
+    height: 150px;
+    -webkit-filter: blur(20px); /* Safari 6.0 - 9.0 */
+    filter: blur(20px);
+    opacity: 0.4;
+}
+.question h3 {
+    font-size: 30px;
+    margin: 20px 0;
+    line-height: 1.4;
+    z-index: 22;
+}
+.question p {
+    z-index: 22;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0;
+    line-height: 1.7;
+}
+.question button {
+    background: inherit;
+    color: rgb(255, 0, 247);
+    width: fit-content;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 22;
+}
+.arrow {
+    margin: 0 10px;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    background-color: rgb(23, 1, 53);
+    position: relative;
+    z-index: 1;
+}
+.footer nav {
+    margin: 10px 0;
+}
+.icons {
+    color: white;
+    height: 25px;
+    width: 25px;
+    margin: 10px 10px 0;
+}
+.footer a {
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+}
+.footer p {
+    font-size: 17px;
+    color: white;
+    margin: 10px 20px;
+    line-height: 1.4;
+}
