@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 import style from "./../styles/about.module.css";
-import bg1 from './../assets/orangebg.jpg'
+import bg1 from "./../assets/orangebg.jpg";
 import bg2 from "./../assets/tealbg.jpg";
 import bg3 from "./../assets/purplebg.jpg";
-import Header from './Header'
+import Header from "./Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
@@ -13,7 +13,7 @@ import {
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function About() {
   return (
