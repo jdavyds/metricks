@@ -3,7 +3,6 @@
     background-size: cover;
 }
 .intro {
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
     padding: 80px 0 0 35%;
@@ -63,7 +62,8 @@
 .purpose {
     color: white;
     font-size: 55px;
-    padding: 120px 0 0;
+    padding: 120px 30px 0;
+    word-wrap: break-word;
     text-align: left;
     line-height: 1.6;
     display: flex;
@@ -209,10 +209,109 @@
     font-size: 17px;
     text-decoration: none;
     color: white;
+    margin: 10px;
 }
 .footer p {
     font-size: 17px;
     color: white;
     margin: 10px 20px;
     line-height: 1.4;
+}
+@media only screen and (max-width: 800px) { 
+    .intro {
+        padding: 50px 20px;
+        background-position:
+        top 50px right 20px;
+        background-size: 100px;
+    }
+    .intro::before {
+        width: 0;
+        height: 0;
+    }
+    .intro img {
+        top: 90px;
+        left: unset;
+    }
+    .intro h6 {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .intro h1 {
+        font-size: 40px;
+        margin: 30px 0;
+    }
+    .intro p {
+        margin: 10px 0;
+        width: unset;
+        z-index: 333;
+    }
+    .purpose {
+        font-size: 30px;
+        padding: 20px;
+        word-wrap: normal;
+        text-align: left;
+        line-height: 1.4;
+    }
+    .pitch {
+        min-height: unset;
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .why, .grow {
+        width: 100%;
+        padding: 20px;
+    }
+    .why h6, .grow h6 {
+        font-size: 16px;
+    }
+    .why p, .grow p {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    .why {
+        background-image: unset;
+    }
+    .grow img {
+        top: 60px;
+        left: unset;
+        width: 80%;
+        height: 250px;
+    }
+    .grow::before {
+        width: 0;
+        height: 0;
+    }
+    .question {
+        min-height: unset;
+        padding: 20px;
+    }
+    .question img {
+        top: 50px;
+        right: unset;
+        width: 90%;
+        height: 150px;
+    }
+    .question h3 {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+    .question p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .question button {
+        font-size: 16px;
+    }
+    .icons {
+        height: 20px;
+        width: 20px;
+    }
+    .footer a {
+        font-size: 14px;
+    }
+    .footer p {
+        font-size: 14px;
+        text-align: center;
+    }
 }

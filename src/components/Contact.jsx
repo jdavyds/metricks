@@ -5,7 +5,10 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Box from "@mui/material/Box";
 import Fab from "@mui/material/Fab";
+import { useNavigate } from "react-router-dom";
+
 export default function Contact() {
+  const navigate = useNavigate();
   return (
     <div className={style.contact}>
       <div className={style.dummy}>
@@ -51,7 +54,11 @@ export default function Contact() {
       </div>
       <Box className={style.nav}>
         <Fab color="white">
-          <FontAwesomeIcon className={style.icons} icon={faArrowRight} />
+          <FontAwesomeIcon
+            className={style.icons}
+            icon={faArrowRight}
+            onClick={() => navigate("/")}
+          />
         </Fab>
       </Box>
     </div>

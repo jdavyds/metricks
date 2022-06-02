@@ -1,0 +1,542 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+    background-color: rgb(250, 250, 250);
+}
+.header img {
+    height: 80px;
+}
+.header a {
+    margin: 0 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(23, 1, 53);
+}
+.header a.active {
+    color: rgb(255, 0, 247);
+}
+.header button  {
+    padding: 15px 25px;
+    margin: 0 30px;
+    font-size: 18px;
+    background: white;
+    color: rgb(23, 1, 53);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+.header .icons {
+    display: none;
+    color: rgb(23, 1, 53);
+    font-size: 25px;
+}
+@media only screen and (max-width: 800px) {
+    .header {
+        padding: 20px;
+        position: relative;
+    }
+    .header img {
+        height: 60px;
+    }
+    .header a {
+        font-size: 16px;
+    }
+    .header button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    .header .icons {
+        display: block;
+    }
+    .header > a {
+        width: fit-content;
+        margin: 0;
+    }
+    .header nav {
+        display: none;
+    }
+    .header nav.show {
+        background: white;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        z-index: 11111;
+    }
+    .header nav.show a, .header nav.show button {
+        margin: 0;
+        padding: 10px;
+        font-size: 16px;
+        background: white;
+        color: rgb(23, 1, 53);
+        border: none;
+        border-radius: 5px;
+    }
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 20px 15%;
+    color: white;
+    background: rgb(23, 1, 53);
+    position: relative;
+}
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(41, 19, 70); 
+    opacity: 0.7;
+    background-size: cover;
+}
+.intro img {
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    width: 200px;
+    height: 90%;
+    -webkit-filter: blur(20px); 
+    filter: blur(20px);
+    opacity: 0.4;   
+}
+.intro h6 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    z-index: 444;
+}
+.intro h6 b {
+    margin: 10px;
+}
+.intro h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin: 10px 0 100px 70px;
+    line-height: 1.4;
+    text-align: left;
+    z-index: 444;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 120px;
+    background-color: rgb(250, 250, 250);
+}
+.latest {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 0 30px
+}
+.latest h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0;
+    text-align: left;
+}
+.latest nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px 0;
+}
+.latest nav p {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.4;
+    color: rgb(105, 103, 103);
+}
+.latest nav label {
+    width: 50%;
+    font-size: 18px;
+    color: rgb(105, 103, 103);
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.latest nav input {
+    width: 80%;
+    font-size: 18px;
+    color: rgb(105, 103, 103);
+    background: inherit;
+    border-radius: 40px;
+    border: 1px solid rgb(105, 103, 103);
+    padding: 20px;
+}
+.latest nav .icons {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    color: inherit;
+    font-size: 25px;
+}
+.posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgb(192, 188, 188);
+}
+.post img {
+    box-shadow: 0 0 10px 0 rgb(216, 212, 212);
+}
+.post small {
+    opacity: 0.4;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+.post strong {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+    padding: 0 10px;
+    text-align: left;
+}
+.post p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 10px;
+    text-align: left;
+    opacity: 0.6;
+}
+.post button {
+    background: inherit;
+    color: rgb(255, 0, 247);
+    width: fit-content;
+    margin: 20px 0;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 22;
+}
+.post span {
+    width: 60px;
+    height: 3px;
+    margin: 5px;
+    background: rgb(255, 0, 247);
+}
+.recent {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 0 30px
+}
+.recent h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0;
+    text-align: left;
+}
+.recent p {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.4;
+    color: rgb(105, 103, 103);
+}
+.rposts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.rpost {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgb(192, 188, 188);
+}
+.rpost small {
+    opacity: 0.4;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+.rpost strong {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+    padding: 0 10px;
+    text-align: left;
+}
+.rpost p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 10px;
+    opacity: 0.6;
+}
+.rpost button {
+    background: inherit;
+    color: rgb(255, 0, 247);
+    width: fit-content;
+    margin: 20px 0;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 22;
+}
+.rpost span {
+    width: 60px;
+    height: 3px;
+    margin: 5px;
+    background: rgb(255, 0, 247);
+}
+.load {
+    padding: 15px 25px;
+    width: 200px;
+    margin: 30px auto;
+    font-size: 16px;
+    background: rgb(124, 15, 213);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+.question {
+    min-height: 100px;
+    padding: 30px 120px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    z-index: 0;
+    background: rgb(23, 1, 53);
+}
+.question img {
+    position: absolute;
+    top: 50px;
+    right: 220px;
+    width: 250px;
+    height: 150px;
+    -webkit-filter: blur(20px); 
+    filter: blur(20px);
+    opacity: 0.4;
+}
+.question h3 {
+    font-size: 30px;
+    margin: 20px 0;
+    line-height: 1.4;
+    z-index: 22;
+}
+.question p {
+    z-index: 22;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0;
+    line-height: 1.7;
+}
+.question button {
+    background: inherit;
+    color: rgb(255, 0, 247);
+    width: fit-content;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 22;
+}
+.arrow {
+    margin: 0 10px;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    background-color: rgb(250, 250, 250);
+    color: rgb(23, 1, 53);
+    position: relative;
+    z-index: 1;
+}
+.footer nav {
+    margin: 10px 0;
+}
+.icons {
+    height: 25px;
+    width: 25px;
+    margin: 10px 10px 0;
+}
+.footer a {
+    font-size: 17px;
+    color: rgb(23, 1, 53);
+    text-decoration: none;
+    margin: 10px;
+    opacity: 0.6;
+}
+.footer p {
+    opacity: 0.6;
+    font-size: 17px;
+    margin: 10px 20px;
+    line-height: 1.4;
+}
+@media only screen and (max-width: 800px) { 
+    .intro {
+        padding: 50px 20px;
+        background-position:
+        top 50px right 20px;
+        background-size: 100px;
+    }
+    .intro::before {
+        width: 0;
+        height: 0;
+    }
+    .intro img {
+        top: 10px;
+        left: unset;
+    }
+    .intro h6 {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .intro h1 {
+        font-size: 40px;
+        margin: 30px 0;
+    }
+    .intro p {
+        margin: 10px 0;
+        width: unset;
+        z-index: 333;
+    }
+    .main {
+        padding: 0;
+    }
+    .latest h1 {
+        font-size: 25px;
+    }
+    .latest nav {
+        flex-direction: column;
+    }
+    .latest nav p {
+        width: 100%;
+        font-size: 16px;
+    }
+    .latest nav label {
+        width: 100%;
+        font-size: 16px;
+        justify-content: center;
+    }
+    .latest nav input {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+        margin: 20px 0;
+    }
+    .latest nav .icons {
+        right: 5px;
+        top: 20px;
+        font-size: 20px;
+    }
+    .posts {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .post {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .post strong {
+        font-size: 18px;
+    }
+    .post p {
+        font-size: 14px;
+    }
+    .post button {
+        font-size: 12px;
+    }
+    .post span {
+        width: 40px;
+        height: 2px;
+    }
+    .recent {
+        margin: 20px 0;
+        padding: 0 20px
+    }
+    .recent h1 {
+        font-size: 25px;
+    }
+    .recent p {
+        width: 100%;
+        font-size: 16px;
+    }
+    .rposts {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .rpost {
+        width: 100%;
+        margin: 20px 0;
+        padding: 10px;
+    }
+    .rpost strong {
+        font-size: 18px;
+    }
+    .rpost p {
+        font-size: 14px;
+    }
+    .rpost button {
+        font-size: 12px;
+    }
+    .rpost span {
+        width: 40px;
+        height: 2px;
+    }
+    .question {
+        min-height: unset;
+        padding: 20px;
+    }
+    .question img {
+        top: 50px;
+        right: unset;
+        width: 90%;
+        height: 100px;
+    }
+    .question h3 {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+    .question p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .question button {
+        font-size: 16px;
+    }
+    .icons {
+        height: 20px;
+        width: 20px;
+    }
+    .footer a {
+        font-size: 14px;
+    }
+    .footer p {
+        font-size: 14px;
+        text-align: center;
+    }
+}

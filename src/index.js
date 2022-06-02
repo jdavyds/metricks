@@ -8,6 +8,7 @@ import Landing from './components/Landing';
 import About from './components/About';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
+import Github from './components/Github';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ root.render(
           <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="github" element={<Github />} />
         </Route>
       </Routes>
     </BrowserRouter>

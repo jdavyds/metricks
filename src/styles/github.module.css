@@ -1,0 +1,88 @@
+.main {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-around;
+}
+.user {
+    min-height: 200px;
+    height: auto;
+    background: rgb(23, 1, 53, 0.7);
+    color: white;
+    display: flex;
+    margin: 10px;
+    border-radius: 20px;
+}
+.user img {
+    width: 200px;
+    height: 100%;
+    border-radius: inherit;
+}
+.user div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 20px;
+}
+.user div h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+.user div p {
+    font-size: 18px;
+    line-height: 1.5;
+    word-wrap: break-word;
+
+}
+.user div nav {
+    margin: auto 0 20px ;
+}
+.user div nav span {
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.navigator {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigate {
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    border: 1px solid rgb(23, 1, 53);
+    color: rgb(23, 1, 53);
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.navigate #icons {
+    font-size: 20px;
+    margin: 0 10px;
+}
+.pageNumbers {
+    background: rgb(23, 1, 53, 0.7);
+    display: flex;
+    border-radius: 20px;
+}
+.pageNumbers button {
+    background: rgb(23, 1, 53, 0.7);
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

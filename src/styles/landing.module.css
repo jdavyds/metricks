@@ -11,7 +11,6 @@
     url(./../assets/bg2.png);
     background-size: 130px, 100px;
     background-repeat: no-repeat;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +33,7 @@
 .count {
     width: 30%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 18px;
     margin: 30px 0;
@@ -45,7 +44,7 @@
     color: black;
     width: 100px;
     height: 120px;
-    margin: 0 5px;
+    margin: 0 10px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -151,10 +150,89 @@
     font-size: 17px;
     text-decoration: none;
     color: white;
+    margin: 10px;
 }
 .footer p {
     font-size: 17px;
     color: white;
     margin: 10px 20px;
     line-height: 1.4;
+}
+@media only screen and (max-width: 800px) { 
+    .main {
+        background-position:
+        top 30px left 50px,
+        top 200px right 50px;
+        background-size: 100px, 80px;
+    }
+    .main h1 {
+        font-size: 25px;
+        margin: 20px;
+        color: white;
+        text-align: center;
+    }
+    .main p {
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0 20px;
+        line-height: 1.4;
+        color: white;
+        text-align: center;
+    }
+    .count {
+    width: 100%;
+    font-size: 12px;
+    margin: 30px 0;
+    }
+    .count span {
+        width: 60px;
+        height: 80px;
+    }
+    .count strong {
+        font-size: 25px;
+        padding: 10px;
+    }
+    .name {
+    width: 100%;
+    flex-direction: column;
+    }
+    .name input {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    .waitlist {
+        width: 90%;
+        margin: 30px;
+        font-size: 16px;
+    }
+    .waitlist input {
+        height: 40px;
+        padding: 20px;
+    }
+    .waitlist button {
+        height: 40px;
+        width: 40%;
+        font-size: 10px;
+    }
+    .footer {
+        min-height: unset;
+        padding: 20px 0;
+        background-size: 100px;
+        padding-top: 50px;
+    }
+    .footer::before {
+        width: 90%;
+        height: 100%;
+    }
+    .icons {
+        height: 20px;
+        width: 20px;
+        margin: 50px 10px 0;
+    }
+    .footer a {
+        font-size: 14px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
 }

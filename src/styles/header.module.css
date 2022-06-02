@@ -15,6 +15,9 @@
     text-decoration: none;
     color: white;
 }
+.header a.active {
+    color: rgb(255, 0, 247);
+}
 .header button  {
     padding: 15px 25px;
     margin: 0 30px;
@@ -24,4 +27,55 @@
     border-radius: 30px;
     border: none;
     outline: none;
+}
+.icons {
+    display: none;
+    color: white;
+    font-size: 25px;
+}
+@media only screen and (max-width: 800px) {
+    .header {
+        padding: 20px;
+        position: relative;
+    }
+    .header img {
+        height: 60px;
+    }
+    .header a {
+        font-size: 16px;
+    }
+    .header button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    .icons {
+        display: block;
+    }
+    .header > a {
+        width: fit-content;
+        margin: 0;
+    }
+    .header nav {
+        display: none;
+    }
+    .header nav.show {
+        background: white;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        z-index: 11111;
+    }
+    .header nav.show a, .header nav.show button {
+        margin: 0;
+        padding: 10px;
+        font-size: 16px;
+        background: white;
+        color: rgb(23, 1, 53);
+        border: none;
+        border-radius: 5px;
+    }
 }
