@@ -12,10 +12,11 @@ import {
   faInstagramSquare,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function About() {
+  const navigate = useNavigate();
   return (
     <div className={style.all}>
       <Header />
@@ -96,7 +97,7 @@ export default function About() {
         <nav>
           <Link to="/"> Terms of Service </Link>
           <Link to="/"> Privacy Policy </Link>
-          <Link to="/github"> Github Route </Link>
+          <p onClick={() => navigate("/github")}> Github Route </p>
         </nav>
         <p>Copyright 2022 @ Peddle Technologies. All Rights Reserved</p>
       </footer>

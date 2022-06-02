@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import style from "./../styles/blog.module.css";
 import logo from "../assets/logo.png";
 import post from "../assets/blog.png";
@@ -235,7 +235,7 @@ export default function Blog() {
         <nav>
           <Link to="/"> Terms of Service </Link>
           <Link to="/"> Privacy Policy </Link>
-          <Link to="/github"> Github Route </Link>
+          <p onClick={() => navigate("/github")}> Github Route </p>
         </nav>
         <p>Copyright 2022 @ Peddle Technologies. All Rights Reserved</p>
       </footer>

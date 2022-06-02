@@ -10,9 +10,10 @@ import {
   faInstagramSquare,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Landing() {
+  const navigate = useNavigate();
   return (
     <div className={style.all}>
       <Header />
@@ -45,7 +46,9 @@ export default function Landing() {
           <nav>
             <Link to="/"> Terms of Service </Link>
             <Link to="/"> Privacy Policy </Link>
-            <Link to="/github"> Github Route </Link>          
+            <p onClick={() => navigate("/github")} style={{ zIndex: 2222 }}>
+              Github Route
+            </p>
           </nav>
           <p>Copyright 2022 @ Peddle Technologies. All Rights Reserved</p>
         </div>
