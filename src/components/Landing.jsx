@@ -46,10 +46,10 @@ export default function Landing() {
           <nav>
             <Link to="/"> Terms of Service </Link>
             <Link to="/"> Privacy Policy </Link>
-            <p onClick={() => navigate("/github")} style={{ zIndex: 2222 }}>
-              Github Route
-            </p>
           </nav>
+          <p onClick={() => navigate("/github")} style={{ zIndex: 2222 }}>
+            Github Route
+          </p>
           <p>Copyright 2022 @ Peddle Technologies. All Rights Reserved</p>
         </div>
       </main>

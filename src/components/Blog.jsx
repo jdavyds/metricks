@@ -235,8 +235,8 @@ export default function Blog() {
         <nav>
           <Link to="/"> Terms of Service </Link>
           <Link to="/"> Privacy Policy </Link>
-          <p onClick={() => navigate("/github")}> Github Route </p>
         </nav>
+        <p onClick={() => navigate("/github")}> Github Route </p>
         <p>Copyright 2022 @ Peddle Technologies. All Rights Reserved</p>
       </footer>
     </div>
