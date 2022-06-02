@@ -235,6 +235,7 @@ export default function Blog() {
         <nav>
           <Link to="/"> Terms of Service </Link>
           <Link to="/"> Privacy Policy </Link>
+          <Link to="/github"> Github Route </Link>
         </nav>
         <p>Copyright 2022 @ Peddle Technologies. All Rights Reserved</p>
       </footer>
